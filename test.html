@@ -1,0 +1,77 @@
+<style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      height: 99vh;
+    }
+  
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-info h2 {
+      margin-bottom: 10px;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-form label {
+      margin-bottom: 5px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    .contact-form textarea {
+      min-height: 150px;
+    }
+  
+    .social-links {
+      display: flex;
+    }
+  
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    .social-links img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Phone: 555-555-5555</p>
+      <p>Email: info@company.com</p>
+      <p>Address: 123 Main St, Anytown USA 12345</p>
+      <div class="social-links">
+        <a href="#"><img src="https://image.flaticon.com/icons/svg/174/174848.svg" alt="Facebook icon"></a>
+        <a href="#"><img src="https://image.flaticon.com/icons/svg/174/174855.svg" alt="Twitter icon"></a>
+        <a href="#"><img src="https://image.flaticon.com/icons/svg/185/185964.svg" alt="Instagram icon"></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>

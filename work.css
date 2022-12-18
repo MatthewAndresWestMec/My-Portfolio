@@ -146,6 +146,7 @@ grid-template-columns: 1.5fr 1fr;
 
 .name1{
 grid-area: name1;
+font-family: Lemonmilk;
 display: flex;
   justify-content: right;
 color:white
@@ -207,4 +208,9 @@ color: white;
 p{
   color: white;
   font-size: 5vh;
+}
+
+@font-face {
+  font-family: Lemonmilk;
+  src: url(LEMONMILK-Regular.otf);
 }

@@ -145,6 +145,7 @@ grid-area: github;
 }
 
 .name1{
+  font-family: Lemonmilk;
   grid-area: name1;
   display: flex;
     justify-content: right;
@@ -190,4 +191,9 @@ a:hover {
 
 a:active {
   color: white;
+}
+
+@font-face {
+  font-family: Lemonmilk;
+  src: url(LEMONMILK-Regular.otf);
 }
