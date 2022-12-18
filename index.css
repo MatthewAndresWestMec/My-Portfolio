@@ -98,6 +98,7 @@ html{
 }
 
 .navsidebar{
+  background-color: rgb(15, 15, 15, .5);
   grid-area: sidebar;
   border-right: 2px solid black;
   display:grid;
@@ -114,23 +115,21 @@ html{
 }
 
 .emailLink{
-  border: 2px solid #212121;
-  border-radius: 20px;
-  text-align: center;
-  grid-area: emailLink;
+  padding-bottom: 1vh;
+text-align: center;
+grid-area: emailLink;
 }
 .linkedin{
-  border: 2px solid #212121;
-  border-radius: 20px;
-  text-align: center;
-  grid-area: linkedin;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+text-align: center;
+grid-area: linkedin;
 }
 
 .github{
-  border: 2px solid #212121;
-  border-radius: 20px;
-  text-align: center;
-  grid-area: github;
+  padding-top: 1vh;
+text-align: center;
+grid-area: github;
 }
 
 .mainContent{

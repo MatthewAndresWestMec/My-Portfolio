@@ -98,6 +98,7 @@ position: relative;
 }
 
 .navsidebar{
+  background-color: rgb(15, 15, 15, .5);
 grid-area: sidebar;
 border-right: 2px solid black;
 display:grid;
@@ -114,21 +115,19 @@ grid-template-columns: 1fr;
 }
 
 .emailLink{
-border: 2px solid #212121;
-border-radius: 20px;
+  padding-bottom: 1vh;
 text-align: center;
 grid-area: emailLink;
 }
 .linkedin{
-border: 2px solid #212121;
-border-radius: 20px;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
 text-align: center;
 grid-area: linkedin;
 }
 
 .github{
-border: 2px solid #212121;
-border-radius: 20px;
+  padding-top: 1vh;
 text-align: center;
 grid-area: github;
 }
@@ -153,32 +152,30 @@ color:white
 }
 
 .workContainer {
-  display: work;
-  border: 2px solid black;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-gap: 16px;
+  background-color: rgb(15, 15, 15, .5);
+  grid-area: work;
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: 99vh;
 }
 
 .box {
-  border: 2px solid black;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
-
-.box img {
-width: 100%;
-height: auto;
+  width: 25%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box a {
-margin: 8px 0;
+  display: block;
 }
 
+.box img {
+  height: 50vh;
+width: 100%;
+}
 
 
 h2{
@@ -206,4 +203,8 @@ color: gray;
 
 a:active {
 color: white;
+}
+p{
+  color: white;
+  font-size: 5vh;
 }
