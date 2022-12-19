@@ -147,7 +147,7 @@ grid-template-columns: 1.5fr 1fr;
 
 .name1{
 grid-area: name1;
-font-family: Lemonmilk;
+font-family: Akira;
 display: flex;
   justify-content: right;
 color:white
@@ -179,7 +179,9 @@ color:white
 width: 100%;
 }
 
-
+.links{
+  font-family:Next;
+}
 h2{
 font-size: 10vh;
 }
@@ -209,9 +211,20 @@ color: white;
 p{
   color: white;
   font-size: 5vh;
+  font-family: Lemonmilk;
 }
 
 @font-face {
   font-family: Lemonmilk;
   src: url(LEMONMILK-Regular.otf);
+}
+
+@font-face {
+  font-family: Akira;
+  src: url(Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+  font-family: Next;
+  src: url(NEXT\ ART_Regular.otf);
 }

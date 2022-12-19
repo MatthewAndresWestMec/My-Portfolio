@@ -141,33 +141,20 @@ grid-template-columns: 1.5fr 1fr;
   grid-template-rows:1fr 6fr;
   grid-template-areas:
       "name1 name1"
-      "text1 picture";
+      "mainContact mainContact";
 }
 
 .name1{
-  font-family: Lemonmilk;
+  font-family: Akira;
 grid-area: name1;
 display: flex;
   justify-content: right;
 color:white
 }
 
-.text1{
-padding: 15vh;
-grid-area: text1;
-text-align: left;
-justify-content: center;
-color:white
-}
 
-.picture1{
-grid-area: picture;
-text-align: center;
-color:white
-}
-
-h2{
-font-size: 10vh;
+h3{
+font-family: Lemonmilk;
 }
 
 h1{
@@ -179,6 +166,9 @@ img{
 border: 2px solid black;
 }
 
+label{
+  font-family: Next;
+}
 a:link,
 a:visited {
 text-decoration: none;
@@ -197,3 +187,117 @@ color: white;
   font-family: Lemonmilk;
   src: url(LEMONMILK-Regular.otf);
 }
+
+@font-face {
+  font-family: Akira;
+  src: url(Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+  font-family: Next;
+  src: url(NEXT\ ART_Regular.otf);
+}
+
+.grid {
+  grid-area: mainContact;
+  background-color: rgb(15, 15, 15, .5);
+  border: 2px solid black;
+  display: grid;
+  /* width:50%; */
+
+  grid-template-columns:1fr 2fr 2fr 1fr; 
+  grid-template-rows: 1.5fr 1fr 3fr 1fr;  
+  grid-template-areas:
+    ". b1 b1 ."
+    ". b2 b3 ."
+    ". b4 b4 ."
+    ". b5 b5 .";  
+  grid-gap: 1vh;
+}
+
+
+.grid-item {
+  background-color: #eee;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+
+.myInfo {
+  color: white;
+  grid-area: b1;
+  text-align: center;
+}
+
+.clientName {
+  grid-area: b2;
+  text-align: center;
+  color: white;
+}
+
+.clientEmail {
+  grid-area: b3;
+  text-align: center;
+  color: white;
+}
+
+.clientMessage {
+  grid-area: b4;
+  text-align: center;
+  color: white;
+  
+}
+
+.submitbutton {
+  grid-area: b5;
+  text-align: center;
+}
+
+.textMessage {
+  width: 99%;
+  padding:0px;
+  margin: 0;
+}
+
+textarea{
+  border: 2px solid black;
+  height: 90%;;
+}
+
+input {
+  border-radius: 2px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin: 1px;
+}
+.realsubmitButton{
+  width: 35%;
+  text-align: center;
+}
+
+label{
+  float: left;
+}
+
+
+@media only screen and (max-width: 896px) { 
+  .grid {
+      background-color: rgb(15, 15, 15, .5);
+      border: 2px solid black;
+      display: grid;
+      width:50%;
+      height: 99vh;
+      grid-template-columns:1fr 1fr;  /* Define 2 columns */
+      grid-template-rows: 1.5fr 1fr 3fr 1fr;  /* Define 3 rows */
+      grid-template-areas:
+        " b1 b1 "
+        " b2 b3 "
+        " b4 b4 "
+        " b5 b5 ";  
+      grid-gap: 1vh;
+    }
+}
+

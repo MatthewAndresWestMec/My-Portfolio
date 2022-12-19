@@ -146,7 +146,7 @@ grid-area: github;
 }
 
 .name1{
-  font-family: Lemonmilk;
+  font-family: Akira;
   grid-area: name1;
   display: flex;
     justify-content: right;
@@ -168,7 +168,10 @@ grid-area: github;
 }
 
 h2{
-  font-size: 10vh;
+  font-size: 9vh;
+  font-family: Lemonmilk;
+  margin-bottom: 6vh;
+  margin-top: 11vh;
 }
 
 h1{
@@ -194,7 +197,21 @@ a:active {
   color: white;
 }
 
+p{
+  font-family: Next;
+}
+
 @font-face {
   font-family: Lemonmilk;
   src: url(LEMONMILK-Regular.otf);
+}
+
+@font-face {
+  font-family: Akira;
+  src: url(Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+  font-family: Next;
+  src: url(NEXT\ ART_Regular.otf);
 }

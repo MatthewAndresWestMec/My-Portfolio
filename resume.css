@@ -146,7 +146,7 @@ grid-template-columns: 1.5fr 1fr;
 }
 
 .name1{
-  font-family: Lemonmilk;
+  font-family: Akira;
 grid-area: name1;
 display: flex;
   justify-content: right;
@@ -199,6 +199,15 @@ color: white;
   src: url(LEMONMILK-Regular.otf);
 }
 
+@font-face {
+  font-family: Akira;
+  src: url(Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+  font-family: Next;
+  src: url(NEXT\ ART_Regular.otf);
+}
 /* CSS for the main content */
 
 .resumeContainer {
@@ -223,6 +232,14 @@ h5{
   margin: 2vh;
 }
 
+h3, h4, h5{
+  font-family: Lemonmilk;
+}
+
+p, ul{
+  font-family: Next;
+  font-size: 2.5vh;
+}
 @media only screen and (max-width: 828px) {
   h2 {
       margin-bottom: 0;
