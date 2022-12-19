@@ -413,5 +413,29 @@ p, ul{
             #b4{
               grid-area:  b4;
             }
+
+            
+            .homelink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: homelink;
+            }
+            
+            .resumelink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: resumelink;
+            }
+            .worklink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: worklink;
+            }
+            
+            .contactlink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: contactlink;
+            }
 }
 

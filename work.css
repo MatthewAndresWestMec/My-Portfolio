@@ -231,28 +231,6 @@ p{
 }
 
 @media only screen and (max-width: 480px) { 
-  .grid {
-      background-color: rgb(15, 15, 15, .5);
-      border: 2px solid black;
-      display: grid;
-      width:100%;
-      height: 408px;;
-      grid-template-columns:1fr 1fr; 
-      grid-template-rows: 1fr 1fr 1fr 1fr;  
-      grid-template-areas:
-        " b1 b1 "
-        " b2 b3 "
-        " b4 b4 "
-        " b5 b5 ";  
-      grid-gap: 1vh;
-    }
-
-    .clientMessage {
-      grid-area: b4;
-      text-align: center;
-      color: white;
-      height: 120px;
-    }
 
     html{
       height: 50vh;
@@ -261,7 +239,7 @@ p{
       .side-nav {
         position: fixed;
         top: 0;
-        height: 50vh;
+        height: 57vh;
         left: -150px;
         width: 80px;
         background-color: #333;
@@ -299,7 +277,7 @@ p{
         border-right: 2px solid black;
         border-bottom: 2px solid black;
         display:grid;
-        height: 50vh;
+        height: 57vh;
         grid-template-columns: 1fr;
           grid-template-rows:1fr 3fr 2fr 1fr 1fr;
           grid-template-areas:
@@ -321,22 +299,12 @@ p{
             grid-template-rows:1fr 9fr;
             grid-template-areas:
                 "name1 name1"
-                "mainContact mainContact";
+                "work work";
           }
 
           h1{
             font-size: 2vh;
             margin:1vh;
-            }
-
-            textarea{
-              border: 2px solid black;
-              height: 55%;;
-            }
-
-            .realsubmitButton{
-              width: 60%;
-              text-align: center;
             }
 
             h3{
@@ -346,7 +314,76 @@ p{
 
             p{
               font-size: 1vh;
+              margin:.25vh;
+              width: 100%;
+            }
+            .box{
+              width: 100%;
+            }
+            .workContainer {
+              text-align: center;
+              background-color: rgb(15, 15, 15, .5);
+              grid-area: work;
+              border: 2px black solid;
+              height: 50vh;
+              display:grid;
+              grid-template-columns: 1fr;
+              grid-template-rows:1fr 1fr 1fr 1fr;
+              grid-template-areas:
+              "b1"
+              "b2"
+              "b3"
+              "b4";
             }
 
+            #b1{
+              grid-area:  b1;
+            }
+
+            #b2{
+              grid-area:  b2;
+            }
+            
+            #b3{
+              grid-area:  b3;
+            }
+
+            #b4{
+              grid-area:  b4;
+            }
+
+            .box img {
+              height: 8vh;
+            width: 10vh;
+            }
+
+            .links{
+              font-size: 1vh;
+              text-align: center;
+            }
+
+            
+            .homelink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: homelink;
+            }
+            
+            .resumelink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: resumelink;
+            }
+            .worklink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: worklink;
+            }
+            
+            .contactlink{
+              padding: 3vh 0;
+              text-align: center;
+              grid-area: contactlink;
+            }
 }
 
