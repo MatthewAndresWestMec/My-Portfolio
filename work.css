@@ -148,8 +148,9 @@ grid-template-columns: 1.5fr 1fr;
 .name1{
 grid-area: name1;
 font-family: Akira;
-display: flex;
-  justify-content: right;
+/* display: flex;
+  justify-content: right; */
+  text-align: center;
 color:white
 }
 
@@ -228,3 +229,124 @@ p{
   font-family: Next;
   src: url(NEXT\ ART_Regular.otf);
 }
+
+@media only screen and (max-width: 480px) { 
+  .grid {
+      background-color: rgb(15, 15, 15, .5);
+      border: 2px solid black;
+      display: grid;
+      width:100%;
+      height: 408px;;
+      grid-template-columns:1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr;  
+      grid-template-areas:
+        " b1 b1 "
+        " b2 b3 "
+        " b4 b4 "
+        " b5 b5 ";  
+      grid-gap: 1vh;
+    }
+
+    .clientMessage {
+      grid-area: b4;
+      text-align: center;
+      color: white;
+      height: 120px;
+    }
+
+    html{
+      height: 50vh;
+      width: 480px;
+      }
+      .side-nav {
+        position: fixed;
+        top: 0;
+        height: 50vh;
+        left: -150px;
+        width: 80px;
+        background-color: #333;
+        color: #fff;
+        transition: left 0.5s;
+        border-right: 2px solid black;
+        display:grid;
+        grid-template-columns: 1fr;
+          grid-template-rows:1fr 2fr 2fr 2fr 2fr;
+          grid-template-areas:
+              "Xbutton"
+              "homelink"
+              "resumelink"
+              "worklink"
+              "contactlink";
+      }
+
+      .container{
+        margin: 0px;
+        position:fixed;
+          bottom: auto;
+        position: relative;
+          display: grid;
+          height: 50vh;
+          width:100%;
+          grid-template-columns: 1fr 5fr;
+          grid-template-rows:auto;
+          grid-template-areas:
+              "sidebar mainContent"
+        }
+        
+        .navsidebar{
+          background-color: rgb(15, 15, 15, .5);
+        grid-area: sidebar;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        display:grid;
+        height: 50vh;
+        grid-template-columns: 1fr;
+          grid-template-rows:1fr 3fr 2fr 1fr 1fr;
+          grid-template-areas:
+              "navbutton"
+              "."
+              "."
+              "emailLink"
+              "linkedin"
+              "github";
+        }
+
+        .mainContent{
+          padding-left: 1vh;
+          grid-area: mainContent;
+          height: 50vh;
+          width: 38%;
+          display:grid;
+          grid-template-columns: 1.5fr 1fr;
+            grid-template-rows:1fr 9fr;
+            grid-template-areas:
+                "name1 name1"
+                "mainContact mainContact";
+          }
+
+          h1{
+            font-size: 2vh;
+            margin:1vh;
+            }
+
+            textarea{
+              border: 2px solid black;
+              height: 55%;;
+            }
+
+            .realsubmitButton{
+              width: 60%;
+              text-align: center;
+            }
+
+            h3{
+              font-size:3vh;
+              margin: 1vh;
+            }
+
+            p{
+              font-size: 1vh;
+            }
+
+}
+
