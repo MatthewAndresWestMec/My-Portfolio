@@ -275,9 +275,9 @@ p, ul{
       .side-nav {
         position: fixed;
         top: 0;
-        height: 50vh;
+        height: 100vh;
         left: -150px;
-        width: 80px;
+        width: 90px;
         background-color: #333;
         color: #fff;
         transition: left 0.5s;
@@ -299,9 +299,9 @@ p, ul{
           bottom: auto;
         position: relative;
           display: grid;
-          height: 50vh;
+          height: 100vh;
           width:100%;
-          grid-template-columns: 1fr 5fr;
+          grid-template-columns: 1fr 4fr;
           grid-template-rows:auto;
           grid-template-areas:
               "sidebar mainContent"
@@ -313,7 +313,7 @@ p, ul{
         border-right: 2px solid black;
         border-bottom: 2px solid black;
         display:grid;
-        height: 50vh;
+        height: 100vh;
         grid-template-columns: 1fr;
           grid-template-rows:1fr 3fr 2fr 1fr 1fr;
           grid-template-areas:
@@ -328,8 +328,8 @@ p, ul{
         .mainContent{
           padding-left: 1vh;
           grid-area: mainContent;
-          height: 50vh;
-          width: 38%;
+          height: 100vh;
+          width: 100%;
           display:grid;
           grid-template-columns: 1.5fr 1fr;
             grid-template-rows:1fr 9fr;
@@ -339,7 +339,7 @@ p, ul{
           }
 
           h1{
-            font-size: 2vh;
+            font-size: 6vh;
             margin:1vh;
             }
 
@@ -359,37 +359,43 @@ p, ul{
             }
 
             h4{
-              font-size:1vh;
+              font-size:1.5vh;
             }
 
             h5{
-              font-size:1vh;
-              margin: 1vh;
+              font-size:1.25vh;
+              margin: .75vh;
             }
             p{
-              font-size: 1vh;
-              display:none;
+              font-size: 2vh;
+              /* display:none; */
             }
             .displayme{
-              font-size: .8vh;
+              font-size: 1vh;
               font-family: Next;
+              margin: 1vh;
             }
             li{
-              font-size:1vh;
-              display:none;
+              font-size:1.25vh;
+              /* display:none; */
             }
 
+            ul{
+              font-size: 1vh;
+              width: 80%;
+            }
             .noskill, .noobj{
-              display:none;
+              margin-top: 0;
             }
             .resumeContainer {
               grid-area:  resume;
               border:2px solid black;
               background-color: rgb(15, 15, 15, .5);
               display: grid;
-              height: 43vh;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows:1fr 1fr 1fr 1fr;
+              height: 90vh;
+              width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows:1.5fr 1fr 1fr 1fr;
             grid-template-areas:
                 "b1 "
                 "b2 "
@@ -408,6 +414,7 @@ p, ul{
             
             #b3{
               grid-area:  b3;
+              display: none;
             }
 
             #b4{

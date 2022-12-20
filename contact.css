@@ -312,9 +312,9 @@ label{
       border: 2px solid black;
       display: grid;
       width:100%;
-      height: 400px;;
+      height: 85vh;;
       grid-template-columns:1fr 1fr; 
-      grid-template-rows: 1fr 1fr 1fr 1fr;  
+      grid-template-rows: 1fr 1fr 2fr 1fr;  
       grid-template-areas:
         " b1 b1 "
         " b2 b3 "
@@ -331,7 +331,7 @@ label{
 }
 
     html{
-      height: 50vh;
+      height: 100vh;
       width: 480px;
       }
       .side-nav {
@@ -339,8 +339,8 @@ label{
         top: 0;
         height: 50vh;
         left: -150px;
-        width: 80px;
-        height: 50vh;
+        width: 90px;
+        height: 100vh;
         background-color: #333;
         color: #fff;
         transition: left 0.5s;
@@ -362,9 +362,9 @@ label{
           bottom: auto;
         position: relative;
           display: grid;
-          height: 50vh;
+          height: 100vh;
           width:100%;
-          grid-template-columns: 1fr 5fr;
+          grid-template-columns: 1fr 4fr;
           grid-template-rows:auto;
           grid-template-areas:
               "sidebar mainContent"
@@ -376,7 +376,7 @@ label{
         border-right: 2px solid black;
         border-bottom: 2px solid black;
         display:grid;
-        height: 50vh;
+        height: 100vh;
         grid-template-columns: 1fr;
           grid-template-rows:1fr 3fr 2fr 1fr 1fr;
           grid-template-areas:
@@ -391,8 +391,8 @@ label{
         .mainContent{
           padding-left: 1vh;
           grid-area: mainContent;
-          height: 50vh;
-          width: 38%;
+          height: 100vh;
+          width: 90%;
           display:grid;
           grid-template-columns: 1.5fr 1fr;
             grid-template-rows:1fr 9fr;
@@ -402,7 +402,7 @@ label{
           }
 
           h1{
-            font-size: 2vh;
+            font-size: 6vh;
             margin:1vh;
             }
 
@@ -422,7 +422,7 @@ label{
             }
 
             p{
-              font-size: 1vh;
+              font-size: 2vh;
             }
 
             input{}

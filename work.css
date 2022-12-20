@@ -233,15 +233,15 @@ p{
 @media only screen and (max-width: 480px) { 
 
     html{
-      height: 50vh;
+      height: 100vh;
       width: 480px;
       }
       .side-nav {
         position: fixed;
         top: 0;
-        height: 57vh;
+        height: 100vh;
         left: -150px;
-        width: 80px;
+        width: 90px;
         background-color: #333;
         color: #fff;
         transition: left 0.5s;
@@ -263,9 +263,9 @@ p{
           bottom: auto;
         position: relative;
           display: grid;
-          height: 50vh;
+          height: 100vh;
           width:100%;
-          grid-template-columns: 1fr 5fr;
+          grid-template-columns: 1fr 4fr;
           grid-template-rows:auto;
           grid-template-areas:
               "sidebar mainContent"
@@ -277,7 +277,7 @@ p{
         border-right: 2px solid black;
         border-bottom: 2px solid black;
         display:grid;
-        height: 57vh;
+        height: 100vh;
         grid-template-columns: 1fr;
           grid-template-rows:1fr 3fr 2fr 1fr 1fr;
           grid-template-areas:
@@ -292,8 +292,8 @@ p{
         .mainContent{
           padding-left: 1vh;
           grid-area: mainContent;
-          height: 50vh;
-          width: 38%;
+          height: 85vh;
+          width: 80%;
           display:grid;
           grid-template-columns: 1.5fr 1fr;
             grid-template-rows:1fr 9fr;
@@ -303,7 +303,7 @@ p{
           }
 
           h1{
-            font-size: 2vh;
+            font-size: 6vh;
             margin:1vh;
             }
 
@@ -313,7 +313,7 @@ p{
             }
 
             p{
-              font-size: 1vh;
+              font-size: 3vh;
               margin:.25vh;
               width: 100%;
             }
@@ -325,7 +325,8 @@ p{
               background-color: rgb(15, 15, 15, .5);
               grid-area: work;
               border: 2px black solid;
-              height: 50vh;
+              height: 84vh;
+              width: 120%;
               display:grid;
               grid-template-columns: 1fr;
               grid-template-rows:1fr 1fr 1fr 1fr;
@@ -353,12 +354,12 @@ p{
             }
 
             .box img {
-              height: 8vh;
-            width: 10vh;
+              height: 10vh;
+            width: 12vh;
             }
 
             .links{
-              font-size: 1vh;
+              font-size: 2vh;
               text-align: center;
             }
 

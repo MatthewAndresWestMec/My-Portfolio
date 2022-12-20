@@ -218,6 +218,7 @@ p{
 }
 
 .me{
+  margin-top: 4vh;
 width: 400px;
 height: 480px;
 }
@@ -226,15 +227,15 @@ height: 480px;
 @media only screen and (max-width: 480px) { 
 
   html{
-    height: 50vh;
+    height: 100vh;
     width: 480px;
     }
     .side-nav {
       position: fixed;
       top: 0;
       left: -150px;
-      width: 80px;
-      height: 50vh;
+      width: 90px;
+      height: 100vh;
       background-color: #333;
       color: #fff;
       transition: left 0.5s;
@@ -256,9 +257,9 @@ height: 480px;
         bottom: auto;
       position: relative;
         display: grid;
-        height: 50vh;
+        height: 100vh;
         width:100%;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 4fr;
         grid-template-rows:auto;
         grid-template-areas:
             "sidebar mainContent"
@@ -270,7 +271,7 @@ height: 480px;
       border-right: 2px solid black;
       border-bottom: 2px solid black;
       display:grid;
-      height: 50vh;
+      height: 100vh;
       grid-template-columns: 1fr;
         grid-template-rows:1fr 3fr 2fr 1fr 1fr;
         grid-template-areas:
@@ -285,11 +286,11 @@ height: 480px;
       .mainContent{
         padding-left: 1vh;
         grid-area: mainContent;
-        height: 50vh;
-        width: 38%;
+        height: 100vh;
+        width: 90%;
         display:grid;
         grid-template-columns: 1.5fr 1fr;
-          grid-template-rows:1fr 1fr 2fr;
+          grid-template-rows:.5fr 1fr 2fr;
           grid-template-areas:
               "name1 name1"
               "picture picture"
@@ -297,18 +298,20 @@ height: 480px;
         }
 
         h1{
-          font-size: 2vh;
+          text-align: center;
+          font-size: 6vh;
           margin:1vh;
           }
 
 
           h2{
-            font-size:3vh;
+            font-size:8vh;
             margin: 1vh;
           }
 
           p{
-            font-size: 1vh;
+            font-size: 4vh;
+            margin:0vh;
           }
             .text1{
               padding: 0;
@@ -319,8 +322,8 @@ height: 480px;
             }
             
             .me{
-              width:10vh;
-              height:12vh;
+              width:32vw;
+              height:28vh;
               grid-area: picture;
               text-align: center;
               color:white
